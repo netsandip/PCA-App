@@ -1,0 +1,231 @@
+﻿/* Empty. Add your own CSS if you like */
+.body {
+	background-color:#FCFCFB;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* QR screen- starts*/
+.bar .title {
+	left :0px !important;
+	right:0px !important;
+	margin-top: 26px !important;
+}
+
+/* QR screen- Ends*/
+
+/*Connect devices -starts*/
+.devices-list {
+	margin-top: -6px;
+	padding: 62px 30px;
+}
+.devices-list  li{
+	text-align:center;
+}
+.connect-butt{
+	line-height: 15px;
+    min-height: 24px !important;
+    border-radius: 26px;
+    padding: 0px 16px;
+    margin: 0px;
+    background-color: grey !important;
+    font-size: 12px;
+}
+.details-list {
+	position:absolute;
+	top:146px;
+	padding-left :4px;
+}
+.details-list2 {
+	position:absolute;
+	top:136px;
+	padding-left :4px;
+}
+.details-list a ,.details-list2 a{
+    color: #000;
+    font-size: 12px;
+}
+/*Connect devices -ends*/
+
+/*reminder screen css-starts */
+.item-icon-left {
+    padding-left: 21px;
+}
+.item-icon-left .icon {
+    left: inherit; 
+	color: grey;
+    padding-left: 48px;
+	font-size: 18px;
+}
+/*reminder screen css- ends*/
+
+
+
+/*home screen css - starts */
+@charset "utf-8";
+.header{
+	height:80px;	
+}
+
+.tbl_new thead {
+    background:#f7f6f6;
+}
+.tbl .name, 
+.tbl span {
+	display:block;
+	font-weight:700;
+}
+.tbl .gndr {
+	font-weight:normal;
+}
+
+.lnk a {
+    color: #2086de;
+    text-decoration: none;
+	font-weight:700;
+}
+
+.main_pic img {
+	width:100%;
+	max-width:300px;
+	height:auto;
+	overflow:hidden;
+}
+	
+.desc {
+	float:left;
+}
+
+.desc h3 {
+	color:#212121;
+	font-weight:700;
+	font-size:22px;
+	padding:0;
+	padding-bottom:5px;
+	margin:0;
+}
+
+.auth,
+.amnt,
+.amnt_nw {
+	display:block;
+}
+
+ .auth {
+	 margin-bottom:15px;
+}
+
+.amnt span,
+.amnt_nw span {
+	margin-left:8px;
+	font-weight:700;
+	font-size:16px;
+}
+
+ .amnt_nw {
+	 margin-bottom:10px;
+}
+
+.amnt_nw span {
+	color:#ec4444;
+	font-size:18px;
+}
+
+.dec_div p {
+	color:#545454;
+	line-height:24px;
+	}
+
+.dec_div .green {
+	color:#39983b;
+	font-weight:700;
+}
+
+
+.dec_div .green a {
+	color:#39983b;
+	font-weight:700;
+	text-decoration:none;
+}
+
+
+.dec_div .green a:hover {
+	text-decoration:underline;
+}
+.btns {
+	position:relative;
+}
+.btns .btn {
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.btns i {
+	font-size:20px;
+	position:absolute;
+	left:40px;
+}
+
+.sec {
+	margin-top:25px;
+}
+
+.sec h4 {
+	color:#535353;
+	font-size:22px;
+	font-weight:700;
+	margin:0;
+	margin-bottom:20px;
+	padding:0;
+}
+
+
+.sce_sld,
+.sce_sld_two {
+	border-radius:3px;
+	border:solid 1px #d7d7d7;
+	float:left;
+	padding:25px 12px;
+	width:100%;
+}
+
+.sce_sld .pic {
+	margin-right:30px;
+	float:left;
+	height:auto;
+	max-width:250px;
+	width:250px;
+	margin-bottom:25px;	
+ }
+
+.sce_sld_two .pic  {
+	margin-right:30px;
+	float:left;
+	height:auto;
+	margin-bottom:25px;	
+	max-width:190px;
+	width:190px;
+}
+
+.sce_sld .pic img,
+.sce_sld_two .pic img{
+ 	width:100%;
+	height:auto;
+ }
+
+ 
+.sce_sld .pic:last-of-type,
+.sce_sld_two .pic:last-of-type
+{
+	margin-right:0;	
+}
+
+
+.row-custom {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/*home screen css- ends */
+
+
+
