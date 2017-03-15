@@ -4,52 +4,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-		<link href="lib/ionic/css/ionic.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<script src="js/platformOverrides.js"></script>
-    <!-- ionic/angularjs js -->   
-	 <script src="lib/ionic/js/ionic.bundle.js"></script>	 	
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!--For users deploying their apps to Windows 8.1 or Android Gingerbread, platformOverrided.js
+    will inject platform-specific code from the /merges folder -->
+    <script src="js/platformOverrides.js"></script>
+
+    <!-- ionic/angularjs js -->
+    
+	 <script src="lib/ionic/js/ionic.bundle.js"></script>
+	<!-- <script src="lib/angular/angular.js"></script> -->
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-	<script src="js/Chart.min.js"></script>
+
     <!-- your app's js -->
     <script src="js/app.js"></script>
-	  </head>
+     <style>
+	
+	</style> 
+  </head>
   <body ng-app="starter">
-   <ion-view>
-	  <ion-header-bar class="bar-positive">
+
+    <ion-view>
+	<ion-header-bar class="bar-positive">
             <div class="bar bar-header bar-positive" style="background-color:#743C97;margin-top: 0px;height:80px;">
-               <h1 class="title">QuintilesIMS</h1>
+               <h1 class="title">Login</h1>
             </div>
          </ion-header-bar>   
       <ion-content style="top:80px;">	
 		<div class="row">			
 			<h2 class="title" style="font-size: 16px;margin: 20px auto;;text-align:center;" >
-			Please enter your study code <br /> or scan the study QR Code <br /> <center>to get started</center></h2>  
+			Please enter your email and<br /> a password to Login into your <br /> <center>account</center></h2>  
 		</div>
-          <form name="QRForm" novalidate="">
+          <form name="authorizationForm" novalidate="" ng-submit="signIn(authorizationForm)">
+
               <div class="list">
-                  <label class="item item-input">
-                      <span class="input-label" style="font-weight:bold;">Enter Code</span>
-                      <input type="text" name="usercode" value="QR01" style="margin: 6px 20px;border: 1px solid #abadb3;height:24px !important;padding:4px;">
+                  <label class="item item-input" style="padding: 4px 20px;">
+                      <span class="input-label" style="font-weight:bold;">Email</span>
+                      <input type="text"  value="quintiles.demoUser@qt.com" style="margin: 6px 0px;border: 1px solid #abadb3;padding: 4px;height:24px !important;margin-left:-14px;"/>
                   </label>
-                  <label class="item item-input" style="text-align:center;font-weight:bold;padding: 3% 50%;">
-                      or
+                   <label class="item item-input" style="padding: 4px 20px;">
+                      <span class="input-label" style="font-weight:bold;">Password</span>
+                      <input type="password"  value="*******" style="margin: 6px 0px;border: 1px solid #abadb3;padding: 4px;height:24px !important;margin-left:-14px;"/>
                   </label>
-				   <label class="item item-input">
-                      <span class="input-label col col-90" style="font-weight:bold;">Scan QR Code</span>   
-						<i class="col col-20 icon icon-left ion-chevron-right"></i>  
-                  </label>
-				  
-				  
-			</div>
-        </form> 
-      </ion-content>	                    
-            <div class="bar bar-footer" ng-controller="accountCtrl">
-			  <div class="list row">
-				<a href="#" align="right" class="col col-50" style="color:#6E4390;font-weight: bold;text-decoration:none;">Terms & Conditions </a>
-				<a href="#"  ng-click="redirectAccuntpage()" align="right" class="col col-50" style="color:#6E4390;font-weight: bold;text-decoration:none;">Next</a>
-			</div>                  
+              </div>
+            </form> 
+      </ion-content>
+	                <div class="bar bar-footer" ng-controller="connectCtrl"  style="background-image: none;">                  
+				  <div class="list row">				
+				<a href="#connectDevices" ng-click="redirctMainpage()"  align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Login</a>
+			</div>  
               </div>
     </ion-view>
   </body>

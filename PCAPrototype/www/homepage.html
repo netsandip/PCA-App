@@ -10,7 +10,7 @@
       <script src="lib/ionic/js/ionic.bundle.js"></script>
       <script src="js/Chart.min.js"></script>
    </head>
-   <body ng-app="starter">
+ <body >
       <ion-view hide-back-button="true" title="">
          <ion-header-bar class="bar-positive">
             <div class="bar bar-header bar-positive" style="background-color:#6E4390;">
@@ -19,7 +19,8 @@
                </button>
             </div>
          </ion-header-bar>
-		<ion-content class="scroll-content overflow-scroll" style=" marign-top:40px">           
+         <ion-content class="scroll-content overflow-scroll" style=" marign-top:40px"  >
+           
                <div class="card" style="margin: 0px 0px; height: inherit;text-align: center;"
                   ng-click="">
                   <div style="margin-top:55px;
@@ -40,23 +41,26 @@
                      border-bottom-width: 0;
                      font-size: 18px;
                      font-weight: bolder;">Glucose Levels
-                     <br><span  style=" padding: -1 10px;font-weight: lighter;color: gray;">Last synced 1 minute ago</span>
+                     <div style="     font-weight: lighter;
+    color: gray;
+    font-size: 12px;">Last synced 1 minute ago</div>
                   </div>
                   <canvas id="GlucoseLevels" width="220" height="150"> </canvas>
                   <div id="labeltech">
                      <ul>
-                        <li><img src="images/waterdrop.png" style="float: right;
-                           width: 53px;
-                           margin-top: -10px;
-                           margin-right: 42px;"></li>
-                        <span><i style="color: mediumvioletred;
-                           float: right;
-                           font-size: xx-large;
-                           margin-top: -46px;">0/2</i><span>
+                        <li><img src="images/BloodGlucose.png" style="float: right;
+    width: 33px;
+    margin-top: -10px;
+    margin-right: 42px;"></li>
+                        <span><i style="color: #B73573;
+    float: right;
+    font-size: 30px;
+    margin-top: -35px;">0/2</i><span>
                         <br>
              <li style="float: right;
-    width: 72px;
-    padding: 0px;"><span></span>entries out of range</li>
+    width: 70px;
+    padding: 0px;
+    color: black;"><span></span>entries out of range</li>
                      </ul>
                   </div>
                </div>
@@ -69,9 +73,11 @@
                      border-color: white;
                      border-bottom-width: 0;
                      font-size: 18px;
-                     font-weight: bolder;padding: 8px;"><img src="images/warning.jpg" style="width: 30px;
-    margin-top: -11px;"><i style="color: orange;
-    font-size: 24px;">0</i><span  style="margin-left: 10px;
+                     font-weight: bolder;padding: 8px;"><img src="images/AdverseEvent@1.5x.png" style="width: 25px;
+    margin-top: -11px;"><i style="color: #E75A15;
+    font-size: 24px;
+    font-weight: bold;
+    padding: inherit;">0</i><span  style="
                      font-weight: inherit;
                      color: black;">adverse events</span>
                   </div>
@@ -85,17 +91,16 @@
                         font-size: 18px;
                         margin-top: 10px;
                         margin-left: -15px;">Insulin </div>
-                     <img src="images/bottle.png" ng-click=""
-                        style="width: 30px;
+                     <img src="images/Insulin@2x.png" ng-click=""
+                        style="width: 35px;
                         text-align: center;
                         margin-left: -80%;
                         margin-top: 50px;">
-                     <span style="    position: absolute;
-                        font-weight: bolder;
-                        color: #6E4390;
-                        font-size: 30px;
-                        margin-top: 49px;
-                        margin-left: 10px;">10<i style="font-size: 17px;
+                     <span style="position: absolute;
+    font-weight: bolder;
+    color: #6E4390;
+    font-size: 35px;
+    margin-top: 45px;">10<i style="font-size: 17px;
                         color: black;padding: 2px;">U</i></span>
                      <br><br>
                      <div class="col-xs-6 bg-color" style="    height: 120px;;
@@ -163,35 +168,35 @@
                   font-weight: bolder;
                   font-size: 18px;
                   margin-top: 10px;">Food</div>
-               <div> <img src="images/food.jpg" ng-click=""
+               <div> <img src="images/MealLarge.png" ng-click=""
                   style="width: 30px;
-				position: absolute;
-				margin-top: 68px;
-				margin-left: -135px;"> <span style="position: absolute;
-			font-weight: bolder;
-			color: darkgreen;
-			font-size: 27px;
-			margin-top: 68px;
-			margin-left: -90px;
-			float: left;">45<i style="color:black;font-size: 20px;">g</i></span><br>   
+    position: absolute;
+    margin-top: 51px;
+    margin-left: -140px;"> <span style="position: absolute;
+    font-weight: bolder;
+    color: darkgreen;
+    font-size: 27px;
+    margin-top: 48px;
+    margin-left: -100px;
+    float: left;">45<i style="color:black;font-size: 20px;">g</i></span><br>   
                   <i style="margin-left: -145px;
     position: absolute;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
-    margin-top: 83px;">carbs per meal</i>
-                  <img src="images/apple.jpg" ng-click=""
-                     style="width: 30px;
+    margin-top: 64px;">carbs per meal</i>
+                  <img src="images/Apple@1.5x.png" ng-click=""
+                     style="    width: 30px;
     position: absolute;
     margin-top: 120px;
-    margin-left: -135px;"> <span style="position: absolute;
+    margin-left: -140px;"> <span style="position: absolute;
     font-weight: bolder;
     color: darkgreen;
     font-size: 27px;
     margin-top: 120px;
-    margin-left: -90px;">15<i style="color:black;font-size: 20px;">g</i></span>
+    margin-left: -100px;">15<i style="color:black;font-size: 20px;">g</i></span>
                   <i style="margin-left: -145px;
     position: absolute;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     margin-top: 155px;">carbs per snack </i>
                </div>
