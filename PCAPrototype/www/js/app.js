@@ -48,7 +48,12 @@ mainApp.run(function($ionicPlatform) {
                 url: '/homeScreen',
                 templateUrl: 'reminderScreen.html',
                 controller: 'homeScreenCtrl'
-            });
+			})
+            .state('insulinEntry', {
+			    url: '/insulinEntry',
+			    templateUrl: 'insulinEntry.html',
+			    controller: 'insulinEntryCtrl'
+			});
 		 					
       // $urlRouterProvider.otherwise('/users');
     });
@@ -100,6 +105,11 @@ $scope.homescreenview = function () {
 		$window.location.href=  home_link;
 		//$location.path("/account");		
     };
+})
+
+mainApp.controller("insulinEntryCtrl", function ($scope) {
+    console.log("Inside Main page Function");
+    $scope.insulinDate = Date.now();
 })
 
 mainApp.controller("graphCtrl", function($scope) {

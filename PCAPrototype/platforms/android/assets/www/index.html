@@ -39,14 +39,14 @@
       <ion-content style="top:80px;">	
 		<div class="row">			
 			<h2 class="title" style="font-size: 16px;margin: 20px auto;;text-align:center;" >
-			Please enter your email and<br /> a password to Login into your <br /> <center>account</center></h2>  
+			Please enter your email and<br />  password to Login into your <br /> <center>account</center></h2>  
 		</div>
           <form name="authorizationForm" novalidate="" ng-submit="signIn(authorizationForm)">
 
               <div class="list">
                   <label class="item item-input" style="padding: 4px 20px;">
                       <span class="input-label" style="font-weight:bold;">Email</span>
-                      <input type="text"  value="quintiles.demoUser@qt.com" style="margin: 6px 0px;border: 1px solid #abadb3;padding: 4px;height:24px !important;margin-left:-14px;"/>
+                      <input type="text"  value="demoUser@quintiles.com" style="margin: 6px 0px;border: 1px solid #abadb3;padding: 4px;height:24px !important;margin-left:-14px;"/>
                   </label>
                    <label class="item item-input" style="padding: 4px 20px;">
                       <span class="input-label" style="font-weight:bold;">Password</span>
@@ -57,9 +57,14 @@
       </ion-content>
 	                <div class="bar bar-footer" ng-controller="connectCtrl"  style="background-image: none;">                  
 				  <div class="list row">				
-				<a href="#connectDevices" ng-click="redirctMainpage()"  align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Login</a>
+				<a  onclick="insulinPage('connectDevices.html')"  align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Login</a>
 			</div>  
               </div>
     </ion-view>
+      <script>
+          function insulinPage(url) {
+              window.location = url;
+          }
+      </script>
   </body>
 </html>

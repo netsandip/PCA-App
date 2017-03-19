@@ -1,86 +1,95 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-		<link href="lib/ionic/css/ionic.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<script src="js/platformOverrides.js"></script>
-    <!-- ionic/angularjs js -->   
-	 <script src="lib/ionic/js/ionic.bundle.js"></script>	 	
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/platformOverrides.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
     <!-- your app's js -->
     <script src="js/app.js"></script>
-	<style>
-	
-	</style>
-  </head>
-  <body ng-app="starter">
-   <ion-view>
-	  <ion-header-bar class="bar-positive">
+    <style>
+
+    </style>
+</head>
+<body ng-app="starter">
+    <ion-view>
+        <ion-header-bar class="bar-positive">
             <div class="bar bar-header bar-positive" style="background-color:#743C97;margin-top: 0px;height:80px;">
-               <h1 class="title">Connect Devices</h1>
+                <h1 class="title">Connect Devices</h1>
             </div>
-         </ion-header-bar>   
-      <ion-content style="top:80px;">	
-		<div class="row">			
-			<h2 class="title" style="font-size: 16px;margin: 20px auto;;text-align:center;" >
-			Select the devices(s) you <br /> would like to connect with<br /> <center>this application</center></h2>  
-		</div>
-          <form name="QRForm" novalidate="">
-		  <div class="" style="margin: 0px 0px; height: inherit;text-align: center;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);">
-              <div class="list row" style="border:1px solid grey;height:220px;">
-                 <div class="col col-50 devices-list" style="border-right: 1px solid grey;">
-				  <ul>
-				  <li><strong>iHealth</strong></li>
-				  <li><button class="button button-dark connect-butt"><li>
-					  Connect
-					</button>
-				  </ul>
-				 <div class="details-list"><a href="#">MORE DETAILS</a></div>
-				 </div>
-				   <div class="col col-50 devices-list">			   
-				   <ul>
-				  <li><strong>Fitbit</strong></li>
-				  <li><button class="button button-dark connect-butt"><li>
-					  Connect
-					</button>
-				  </ul>
-				 <div class="details-list"><a href="#">MORE DETAILS</a></div>
-				   </div>
-			</div>
-							   
-				   <div class="list row" style="border:1px solid grey;margin-top: -21px;height:220px;">
-					<div class="col col-50 devices-list" style="border-right: 1px solid grey;margin-bottom: -5px;">			   
-					   <ul>
-					  <li><strong>Withings</strong></li>
-					  <li><button class="button button-dark connect-butt"><li>
-						  Connect
-						</button>
-					  </ul>
-					<div class="details-list2"><a href="#">MORE DETAILS</a></div>
-					 </div>
-					<div class="col col-50 devices-list">			   
-					   <ul>
-					  <li><strong>Jawbone UP</strong></li>
-					  <li><button class="button button-dark connect-butt"><li>
-						  Connect
-						</button>
-					  </ul>
-					 <div class="details-list2"><a href="#">MORE DETAILS</a></div>
-					</div>
-				   </div>
-			</div>
-			
-        </form> 
-      </ion-content>	                    
-            <div class="bar bar-footer" ng-controller="devicesCtrl" style="border:1px solid grey;">
-			  <div class="list row">				
-				<a href="#connectDevices"  ng-click="redirectDevicesReg()" align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Next</a>
-			</div>                  
-              </div>
+        </ion-header-bar>
+        <ion-content style="top:80px;">
+            <div class="row">
+                <h2 class="title" style="font-size: 16px;margin: 20px auto;;text-align:center;">
+                    Select the devices(s) you <br /> would like to connect with<br /> <center>this application</center>
+                </h2>
+            </div>
+            <form name="QRForm" novalidate="">
+                <div class="" style="margin: 0px 0px; height: inherit;text-align: center;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);">
+                    <div class="list row" style="border:1px solid grey;height:220px;">
+                        <div class="col col-50 devices-list" style="border-right: 1px solid grey;">
+                            <ul>
+                                <li><strong>iHealth</strong></li>
+                                <li>
+                                    <button class="button button-dark connect-butt">
+                                        Connect
+                                    </button>
+                                <li>
+                            </ul>
+                            <div class="details-list"><a href="#">MORE DETAILS</a></div>
+                        </div>
+                        <div class="col col-50 devices-list">
+                            <ul>
+                                <li><strong>Fitbit</strong></li>
+                                <li>
+                                    <button class="button button-dark connect-butt">
+                                        Connect
+                                    </button>
+                                <li>
+                            </ul>
+                            <div class="details-list"><a href="#">MORE DETAILS</a></div>
+                        </div>
+                    </div>
+
+                    <div class="list row" style="border:1px solid grey;margin-top: -21px;height:220px;">
+                        <div class="col col-50 devices-list" style="border-right: 1px solid grey;margin-bottom: -5px;">
+                            <ul>
+                                <li><strong>Withings</strong></li>
+                                <li>
+                                    <button class="button button-dark connect-butt">
+                                        Connect
+                                    </button>
+                                <li>
+                            </ul>
+                            <div class="details-list2"><a href="#">MORE DETAILS</a></div>
+                        </div>
+                        <div class="col col-50 devices-list">
+                            <ul>
+                                <li><strong>Jawbone UP</strong></li>
+                                <li>
+                                    <button class="button button-dark connect-butt">
+                                        Connect
+                                    </button>
+                                <li>
+                            </ul>
+                            <div class="details-list2"><a href="#">MORE DETAILS</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </ion-content>
+        <div class="bar bar-footer" ng-controller="devicesCtrl" style="border:1px solid grey;">
+            <div class="list row">
+                <a href="#connectDevices" ng-click="redirectDevicesReg()" align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Next</a>
+            </div>
+        </div>
     </ion-view>
-  </body>
+</body>
 </html>

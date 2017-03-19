@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
    <head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -9,14 +9,42 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="lib/ionic/js/ionic.bundle.js"></script>
       <script src="js/Chart.min.js"></script>
+       <style>
+           #labeltech {
+               position: absolute;
+               right: 17px;
+               float: right;
+               margin-top: -135px;
+           }
+
+           .border-div {
+               margin: -1px;
+               border: solid 1px #ABABAA;
+               height: 300px;
+               border-bottom-color: white;
+           }
+
+           .bg-color {
+               ;
+           }
+
+           .row {
+               flex-wrap: none;
+               margin-right: 0;
+               margin-left: 0;
+           }
+
+           body {
+               cursor: url('http://ionicframework.com/img/finger.png'), auto;
+           } 
+       </style>
    </head>
  <body >
       <ion-view hide-back-button="true" title="">
          <ion-header-bar class="bar-positive">
             <div class="bar bar-header bar-positive" style="background-color:#6E4390;">
                <h1 class="title"style="margin-top: 0px !important;">Home</h1>
-               <button class="button button-icon ion-compose" ng-click="">
-               </button>
+                <a href="#" class="button  button-icon ion-android-notifications"></a>
             </div>
          </ion-header-bar>
          <ion-content class="scroll-content overflow-scroll" style=" marign-top:40px"  >
@@ -205,7 +233,7 @@
          </ion-content>
 		 
 		  
-              <div class="tabs tabs-icon-top" style="border-top: solid #6E4390 !important;position:fixed;
+         <div class="tabs tabs-icon-top" style="border-top: solid #6E4390 !important;position:fixed;
                   border-top-color: #6E4390 !important;">
                   <a class="tab-item">
                   <i class="icon ion-home"></i>
@@ -215,24 +243,24 @@
                   <i class="icon ion-ios-bookmarks"></i>
                   Diary
                   </a>
-                  <img src="images/floating_btn.svg" ng-click=""
-                     style="position: absolute;
+				  
+				  <img src="images/floating_btn.svg" onclick="insulinPage('insulinEntry.html')" style="position: absolute;
                      bottom: 1px;
                      overflow: visible;
-                     width: 55px;"> 
+                     width: 55px;" />
+                  
                   <a class="tab-item"    style=" margin-left: 86px;">
                   <i class="icon ion-stats-bars"></i>
                   Graphs
                   </a>
-                  <a class="tab-item">
+                  <a class="tab-item" onclick="insulinPage('questions.html')">
                   <i class="icon ion-more"></i>
                   More
                   </a>
                </div>
-		   
       </ion-view>
-   </body>
-   <script> 
+     <script>
+
       var GlucoseLevelsData = {
       labels : [ "12 am", "6am", "12pm"],
       datasets : [ {
@@ -247,28 +275,12 @@
       	.getContext("2d");
       // draw bar chart
       new Chart(GlucoseLevelsvar).Line(GlucoseLevelsData);
-   </script>
-   <style>
-      #labeltech {
-      position: absolute;
-      right: 17px;
-      float: right;
-      margin-top: -135px;
-      }
-      .border-div {
-	   margin: -1px;
-	   border: solid 1px #ABABAA;
-       height: 300px;
-       border-bottom-color: white;
-	  }
-      .bg-color {;}
-      .row{
-      flex-wrap: none;
-      margin-right: 0;
-      margin-left: 0;
-      }
-      body {
-      cursor: url('http://ionicframework.com/img/finger.png'), auto;
-      }
-   </style>
+
+
+	function insulinPage(url) {
+    window.location = url;
+	}	
+     </script>
+   </body>
+      
 </html>

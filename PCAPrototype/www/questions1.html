@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!--For users deploying their apps to Windows 8.1 or Android Gingerbread, platformOverrided.js
+    will inject platform-specific code from the /merges folder -->
+    <script src="js/platformOverrides.js"></script>
+
+    <!-- ionic/angularjs js -->
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- <script src="lib/angular/angular.js"></script> -->
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <style>
+    </style>
+</head>
+<body ng-app="starter">
+
+    <ion-view>
+        <ion-header-bar class="bar-positive">
+            <div class="bar bar-header bar-positive" style="background-color:#743C97;margin-top: 0px;height:80px;">
+                <h1 class="title">Questionnaire</h1>
+            </div>
+        </ion-header-bar>
+        <ion-content style="top:80px;">
+            <div class="row">
+                <h2 class="title" style="font-size: 16px;margin: 20px auto;;text-align:center;">
+                    1. How are you feeling today?
+                </h2>
+            </div>
+            <ion-list>
+                <ion-radio ng-model="choice" ng-value="'A'">Excellent</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">Very Good</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">Good</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">Fair</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">Poor</ion-radio>
+            </ion-list>
+            <div class="bar bar-footer" ng-controller="connectCtrl" style="background-image: none;">
+                <div class="list row">
+                    <a onclick="insulinPage('homepage.html')" align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Finish</a>
+                </div>
+            </div>
+    </ion-view>
+    <script>
+          function insulinPage(url) {
+              window.location = url;
+          }
+    </script>
+</body>
+</html>
