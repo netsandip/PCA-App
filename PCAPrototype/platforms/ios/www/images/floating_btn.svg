@@ -1,0 +1,19 @@
+<svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="46.56100082397461" height="46.388999938964844" enable-background="new 0 0 46.561 46.389" xml:space="preserve"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+<metadata>
+	<sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+		<slices/>
+		<sliceSourceBounds bottomLeftOrigin="true" x="2.439" y="-49" width="46.561" height="46.389"/>
+	</sfw>
+</metadata>
+<radialGradient id="SVGID_1_" cx="23.881799697875977" cy="23.708999633789062" r="22.67919921875" gradientUnits="userSpaceOnUse">
+	<stop offset="0.5174" style="stop-color:#2E2E2E"/>
+	<stop offset="0.6884" style="stop-color:#2B2B2B;stop-opacity:0.6635"/>
+	<stop offset="0.8105" style="stop-color:#222222;stop-opacity:0.4231"/>
+	<stop offset="0.917" style="stop-color:#121212;stop-opacity:0.2133"/>
+	<stop offset="1" style="stop-color:#000000;stop-opacity:0.05"/>
+</radialGradient>
+
+
+
+
+<g class="currentLayer"><title>Layer 1</title><circle fill="url(#SVGID_1_)" cx="23.881999969482422" cy="23.709999084472656" r="22.679000854492188" id="svg_1"/><circle fill="#04b8b8" cx="22.679000854492188" cy="22.68000602722168" r="22.679000854492188" id="svg_2" class="" fill-opacity="1"/><rect x="20.7189998626709" y="7.9079999923706055" fill="#FFFDFE" width="3.9200000762939453" height="29.542999267578125" id="svg_3"/><rect x="7.9070000648498535" y="20.7189998626709" fill="#FFFDFE" width="29.54199981689453" height="3.9210000038146973" id="svg_4" class=""/></g></svg>

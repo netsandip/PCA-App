@@ -1,17 +1,82 @@
 ﻿/* Empty. Add your own CSS if you like */
+/* Empty. Add your own CSS if you like */
 .body {
 	background-color:#FCFCFB;
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-/* QR screen- starts*/
-.bar .title {
-	left :0px !important;
-	right:0px !important;
-	margin-top: 26px !important;
+.qunt-content {
+    top:initial;
+}
+.qunt-sub-header{
+    margin-top:0px !important;
+}
+.qunt-header {
+    height:45px !important;
+}
+.bar.bar-balanced {
+    height:80px ;
+    background-color:#7fa046 ;
+}
+/*.previous-title {
+    display:none !important;
+}
+.default-title {
+    display:none !important;
+}*/
+/* QR screen- Ends*/
+/* login screen- starts*/
+.bar.bar-positive {
+    /*height:80px ;*/
+    background-color: #743C97;
+    background-image: none;
+    border-color:#743C97  !important;
+}
+.btn-login {
+    color:#6E4390 ;
+    font-weight: bold ;
+    background-color: #fff ;
+    border: none ;
+ }
+
+.error-container {
+  /*margin: 5px 0;*/
+  text-align:center;
+}
+ 
+.error-container:last-child {
+    margin: 0px 0px 1px -30px;
+}
+ 
+.error {
+  font-weight:bold;
+  /*font-family: "Arial Black", Gadget, sans-serif;*/
+  font-size: 14px;
+  color: #B83E2C;
+  vertical-align: middle;
+}
+ 
+.error i {
+  /*font-size: 24px;*/
+  color: #B83E2C;  
+  vertical-align: middle;
+  padding-left:90px;
+}
+ 
+.last-error-container > .error {
+  padding: 10px 16px 0;
+}
+ 
+.has-errors {
+  border-bottom: 3px solid #B83E2C;
+}
+ 
+.no-errors {
+  border-bottom: 3px solid green;
 }
 
-/* QR screen- Ends*/
+/* login screen- Ends*/
+
 
 /*Connect devices -starts*/
 .devices-list {
@@ -23,11 +88,11 @@
 }
 .connect-butt{
 	line-height: 15px;
-    min-height: 24px !important;
+    min-height: 24px ;
     border-radius: 26px;
     padding: 0px 16px;
     margin: 0px;
-    background-color: grey !important;
+    background-color: grey ;
     font-size: 12px;
 }
 .details-list {
@@ -225,7 +290,126 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
+
+#labeltech {
+      position: absolute;
+      right: 17px;
+      float: right;
+      margin-top: -135px;
+      }
+      .border-div {
+	   margin: -1px;
+	   border: solid 1px #ABABAA;
+       height: 300px;
+       border-bottom-color: white;
+	  }
+      .bg-color {;}
+      .row{
+      flex-wrap: none;
+      margin-right: 0;
+      margin-left: 0;
+      }
+      body {
+      cursor: url('http://ionicframework.com/img/finger.png'), auto;
+      }
 /*home screen css- ends */
 
+/*food entry  css - starts */
+ .heading {
+            height: 44px;
+            background-color: #009688;
+            color: #ffffff;
+            text-align: center;
+            line-height: 44px;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
+        .color {
+            background-color: #7fa046;
+        }
 
+        .right {
+            margin-left:120px;
+
+        }
+
+        .rights {
+            margin-left: 145px;
+        }
+
+        .down {
+            margin-top: 90px;
+        }
+     /*.item{
+	padding:12px ;
+	}pls add custom classes*/
+	.item-note {
+    color: #000 ;	
+	}
+
+  .box{
+
+      width:80px;
+      height:30px;
+      margin-left:120px
+  }
+
+/*food entry css-ends*/
+/*diary entry css-starts*/
+
+.insulintime{
+
+    margin-left:5px;
+}
+
+.insulinunits{
+
+    margin-left:10px;
+}
+.insulintype{
+
+    margin-left:20px;
+}
+
+.insulinevent{
+
+    margin-left:20px;
+}
+.insulinheader{
+
+    color:#743C97;
+}
+.glucose{
+
+    margin-left:50px;
+}
+.foodheader{
+
+    color: #7fa046;
+}
+.foodcarbs{
+
+    margin-left:60px;
+}
+.foodtype{
+
+    margin-left:30px;
+}
+.adverseheader{
+
+    color:orangered;
+}
+
+/*diary entry css-ends*/
+/*reminder screen-divya*/
+/*reminder screen-ends*/
+
+        .rightInsulin {
+            margin-left:90px;
+
+        }
+/*.platform-ios.platform-cordova:not(.fullscreen) .has-header, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader{
+    top:45px;
+}*/

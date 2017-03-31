@@ -1,0 +1,61 @@
+﻿<ion-view title="Reminders">    
+    <ion-header-bar class="bar-positive qunt-header" align-title="center">        
+        <i class="button  button-clear  ion-close qunt-sub-header" ng-click="close()"></i>
+        <!--<ion-nav-back-button side="left" class="button-icon icon ion-arrow-left-c"></ion-nav-back-button>-->
+        <h1 class="title qunt-sub-header" style="text-align:center">Add New Reminders</h1>
+        <button class="button button-clear qunt-sub-header" ng-click="saveNewreminders();"><b>Save</b></button>
+    </ion-header-bar>
+    <ion-content class="qunt-content">       
+
+            <ion-item nav-clear menu-close ng-click="show()" class="item-icon-right">
+                <b>Study Parameters</b>  <span class="right">{{select}}{{user}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        <ion-item nav-clear menu-close ng-click="show()" class="item-icon-right">
+            <b>Parameters Type</b>  <span class="right">{{select}}{{user}}</span>
+            <i class="icon ion-ios-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="show()" class="item-icon-right">
+            <b>Time</b>  <span class="right">{{select}}{{user}}</span>
+            <i class="icon ion-ios-arrow-right"></i>
+        </ion-item>
+        <!--<div class="list">
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Study Parameters
+                </div>
+                <select>
+                    <option>Glucose</option>
+                    <option>Insulin</option>
+                    <option>Food</option>
+                    <option>Adverse Event</option>
+                    <option>Visits</option>
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Parameters Type
+                </div>
+                <select>
+                    <option>After Glucose Entery</option>
+                    <option>After Food Entery</option>
+                    <option>After Insulin Entery</option>
+                    <option>Specific Time</option>
+                    <option>Before Visit</option>
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Time
+                </div>
+                Select Time
+            </label>
+
+
+
+
+
+        </div>-->
+       
+    </ion-content>
+</ion-view>

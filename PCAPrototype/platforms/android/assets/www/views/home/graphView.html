@@ -1,0 +1,101 @@
+﻿<ion-view title="" style="font-family: Roboto-Regular;">
+  <ion-header-bar class="bar-positive qunt-header" align-title="center">
+    <!--<ion-nav-back-button side="left" class="button-icon icon ion-arrow-left-c"></ion-nav-back-button>-->
+    <h1 class="title qunt-sub-header" style="text-align: center;font-weight: bold;">Graphs</h1>
+    <div class="buttons">
+      <button class="button button-icon ion-compose" ng-click=""></button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content scroll="true" style="background-color:#F4F3F4">
+    <ion-scroll delegate-handle="taskScroll" direction="y">
+      <div class="card" style="margin: 5px 0px;text-align: center;height: 47px;background-color: #f4f3f4; border-bottom-width: 0;" ng-click="">
+        <div style="margin-top: 12px;font-weight: bolder;text-align: right;color:black;font-size: 18px;">
+          Daily<span style="padding:0 5px;">
+            <img src="images/arrowoptions.jpg" style="float: right;
+    width: 20px;margin-top: 0px;margin-right: 20px">
+          </span>
+        </div>
+      </div>
+
+
+      <div class="card" style="margin: 0 6px; height: initial;" ng-click="">
+        <div class="item "
+             style="height: 45px;font-weight: bolder;color:#C34783;font-size: 18px;border-bottom: none;
+    margin-top: -12px;">
+          Glucose Level<span style="padding:0 10px;font-weight:lighter;color:gray;font-size:12px;">mg/dl.</span>
+        </div>
+        <canvas id="canvas" style="width: 300px;"></canvas>
+      <!--  <canvas id="GlucoseLevelsgraph" style="width: 50%;"></canvas>-->
+      </div>
+
+      <div class="card" style="margin:6px 6px; height:initial;"ng-click="">
+        <div class="item "
+             style="height: 45px;font-weight: bolder;color: #502B73;font-size: 18px;border-bottom: none;
+    margin-top: -12px;">
+          Insulin Level<span style="padding:0 10px;font-weight:lighter;color:gray;font-size:12px;">u</span>
+        </div>
+        <canvas id="insulinlevels" style="width: 50%;margin-left: 20px;"></canvas>
+      </div>
+
+
+
+      <div class="card" style="margin: 6px 6px; height:initial;" ng-click="">
+        <div class="item"
+             style="height: 45px;font-weight: bolder;color:#87BC4D;font-size: 18px;border-bottom: none;
+    margin-top: -12px;">
+          Carbs Consumed<span style="padding:0 10px;font-weight:lighter;color:gray;font-size:12px;">g</span>
+        </div>
+        <canvas id="carbsConsumed" style="width: 50%;"></canvas>
+      </div>
+
+    </ion-scroll>
+  </ion-content>
+  <div class="tabs tabs-icon-top" style="border-top: solid #6E4390 !important;position:fixed;
+                  border-top-color: #6E4390 !important">
+    <a class="tab-item">
+      <i class="icon ion-home"></i>
+      Home
+    </a>
+    <a class="tab-item" ng-click="redirctDiaryEntry()" style="margin-left: -4px;">
+      <i class="icon ion-ios-bookmarks"></i>
+      Diary
+    </a>
+
+    <img src="images/floating_btn.svg" ng-click="floatingmenu($event)" style="position: absolute;
+                     bottom: 1px;
+                     overflow: visible;
+                     width: 55px;" />
+
+    <a class="tab-item" ng-click="graphPage()" style=" margin-left:86px;">
+      <i class="icon ion-stats-bars"></i>
+      Graphs
+    </a>
+    <a class="tab-item" ng-click="redirctConnectDevices()">
+      <i class="icon ion-more"></i>
+      More
+    </a>
+  </div>
+</ion-view>
+
+<style>
+  ion-scroll[direction=y] {
+    height: 140% ;
+  }
+
+  canvas#fg {
+    width: 300px !important;
+    height: inherit !important;
+    margin-left:30px;
+  }
+
+  canvas#d {
+    width: 300px !important;
+    height: inherit !important;
+  }
+
+  canvas#x {
+    width: 300px !important;
+    height: inherit !important;
+  }
+</style>

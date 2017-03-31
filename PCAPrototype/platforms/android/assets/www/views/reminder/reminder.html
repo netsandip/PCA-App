@@ -1,0 +1,65 @@
+﻿<ion-view title="Reminders">    
+    <ion-header-bar class="bar-positive qunt-header" align-title="center">
+        <!--<ion-nav-back-button side="left" class="button-icon icon ion-arrow-left-c"></ion-nav-back-button>-->
+        <h1 class="title qunt-sub-header" style="text-align:center">Reminders</h1>       
+    </ion-header-bar> 
+    <div class="bar bar-subheader row">
+        <button type="submit" ng-disabled="" class="btn btn-login" ng-click="addnewreminders()" style="color:#6E4390;font-weight: bold;text-decoration:none;font-size:14px;">Add New Reminder</button>
+
+    </div>   
+    <ion-content style="margin:32px 0px;">
+        <ion-list show-delete="shouldShowDelete"
+          show-edit="shouldShowEdit"
+          can-swipe="listCanSwipe">
+            <label class="item item-icon-left" style="background-color:#ECE6ED;color:#927CA5;font-weight:bold;">Glucose</label>
+            <ion-item class="item-icon-right" ng-repeat="items in reminderDetails.Glucose">
+                <b>{{items.GlucoseEntry}}</b>                 
+                <span class="item-note">{{items.Time}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button-positive">Edit</ion-option-button>
+                <ion-option-button class="button-assertive">Delete</ion-option-button>
+            </ion-item>
+
+            <label class="item item-icon-left" style="background-color:#EBF1E5;color:#9DBC7C;font-weight:bold;">Insulin</label>
+            <ion-item class="item-icon-right" ng-repeat="items in reminderDetails.Insulin">
+                <b>{{items.InsulinEntry}}</b>
+                <span class="item-note">{{items.Time}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button-positive">Edit</ion-option-button>
+                <ion-option-button class="button-assertive">Delete</ion-option-button>
+            </ion-item>
+            <label class="item item-icon-left" style="background-color:#EBF1E5;color:#9DBC7C;font-weight:bold;">Food</label>
+            <ion-item class="item-icon-right" ng-repeat="items in reminderDetails.Food">
+                <b>{{items.FoodEntry}}</b>
+                <span class="item-note">{{items.Time}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button-positive">Edit</ion-option-button>
+                <ion-option-button class="button-assertive">Delete</ion-option-button>
+            </ion-item>
+            <label class="item item-icon-left" style="background-color:#EBF1E5;color:#97B383;font-weight:bold;">Adverse Event</label>
+            <ion-item class="item-icon-right" ng-repeat="items in reminderDetails.AdverseEvent">
+                <b>{{items.EventEntry}}</b>
+                <span class="item-note">{{items.Time}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button-positive">Edit</ion-option-button>
+                <ion-option-button class="button-assertive">Delete</ion-option-button>
+            </ion-item>
+            <label class="item item-icon-left" style="background-color:#ECE6ED;color:#927CA5;font-weight:bold;">Visits</label>
+            <ion-item class="item-icon-right" ng-repeat="items in reminderDetails.Visit">
+                <b>{{items.VisitEntry}}</b>
+                <span class="item-note">{{items.Time}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <ion-option-button class="button-positive">Edit</ion-option-button>
+                <ion-option-button class="button-assertive">Delete</ion-option-button>
+            </ion-item>
+                       
+        </ion-list> 
+    </ion-content>
+      <div class="bar bar-footer" style="background-image: none;">
+        <div class="col col-100" align="right">
+            <a href="" ng-click="homescreenview()" align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Finish</a>
+        </div>
+    </div>
+</ion-view>
+
+

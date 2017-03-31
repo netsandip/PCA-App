@@ -1,70 +1,75 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>EPRO Project</title>
 
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
-	<!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
-
     <!--For users deploying their apps to Windows 8.1 or Android Gingerbread, platformOverrided.js
     will inject platform-specific code from the /merges folder -->
     <script src="js/platformOverrides.js"></script>
 
     <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/onezone-datepicker.min.js"></script>
+    <script src="lib/ionic-timepicker-0.5.0/ionic-timepicker-0.5.0/dist/ionic-timepicker.bundle.min.js"></script>
+    <script src="lib/ng-cordova.min.js"></script>
     
-	 <script src="lib/ionic/js/ionic.bundle.js"></script>
-	<!-- <script src="lib/angular/angular.js"></script> -->
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
+
+    <script src="js/Chart.min.js"></script>
+
+
+
+
+
     <!-- your app's js -->
     <script src="js/app.js"></script>
-     <style>
-	
-	</style> 
-  </head>
-  <body ng-app="starter">
+    <script src="js/authentication/loginController.js"></script>
+    <script src="js/devices/connectDevicesController.js"></script>
+    <script src="js/devices/connectDevicesRegController.js"></script>
+    <script src="js/reminder/reminderController.js"></script>
+    <script src="js/reminder/addNewreminderCtrl.js"></script> 
+    <script src="js/home/homeController.js"></script>
+    <script src="js/home/graphController.js"></script>
+    <script src="js/insulin/insulinEntryController.js"></script>
+    <script src="js/food/foodEntryController.js"></script>
+    <script src="js/diary/diaryEntryController.js"></script>
+    <script src="js/insulin/insulinDataEntryController.js"></script>
+    <script src="js/food/foodDataEntryController.js"></script>
+   <script src="js/adverseEvents/adverseDataEntryController.js"></script>
+    <script src="js/glucoseData/glucoseDataEntryController.js"></script>
+    <script src="js/adverseEvents/adverseEntryController.js"></script>
+    <script src="js/adverseEvents/adverseEventListController.js"></script>
+    <script src="js/itemscomplete/itemscompleteController.js"></script>
+    <script src="js/questionnaireone/qone.js"></script>
+    <script src="js/questionnairetwo/qtwo.js"></script>
+    <script src="js/questionnairethree/qthree.js"></script>
+    <script src="js/more/more.js"></script>
 
-    <ion-view>
-	<ion-header-bar class="bar-positive">
-            <div class="bar bar-header bar-positive" style="background-color:#743C97;margin-top: 0px;height:80px;">
-               <h1 class="title">Login</h1>
-            </div>
-         </ion-header-bar>   
-      <ion-content style="top:80px;">	
-		<div class="row">			
-			<h2 class="title" style="font-size: 16px;margin: 20px auto;;text-align:center;" >
-			Please enter your email and<br />  password to Login into your <br /> <center>account</center></h2>  
-		</div>
-          <form name="authorizationForm" novalidate="" ng-submit="signIn(authorizationForm)">
 
-              <div class="list">
-                  <label class="item item-input" style="padding: 4px 20px;">
-                      <span class="input-label" style="font-weight:bold;">Email</span>
-                      <input type="text"  value="demoUser@quintiles.com" style="margin: 6px 0px;border: 1px solid #abadb3;padding: 4px;height:24px !important;margin-left:-14px;"/>
-                  </label>
-                   <label class="item item-input" style="padding: 4px 20px;">
-                      <span class="input-label" style="font-weight:bold;">Password</span>
-                      <input type="password"  value="*******" style="margin: 6px 0px;border: 1px solid #abadb3;padding: 4px;height:24px !important;margin-left:-14px;"/>
-                  </label>
-              </div>
-            </form> 
-      </ion-content>
-	                <div class="bar bar-footer" ng-controller="connectCtrl"  style="background-image: none;">                  
-				  <div class="list row">				
-				<a  onclick="insulinPage('connectDevices.html')"  align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Login</a>
-			</div>  
-              </div>
-    </ion-view>
-      <script>
-          function insulinPage(url) {
-              window.location = url;
-          }
-      </script>
-  </body>
+
+
+</head>
+<body ng-app="patientApp">
+
+    <!--<ion-nav-bar class="bar-positive">
+        <ion-nav-back-button side="left" class="button-icon icon ion-arrow-left-c"></ion-nav-back-button>
+    </ion-nav-bar>-->
+    <ion-nav-view></ion-nav-view>
+
+</body>
 </html>
+
+
+

@@ -1,0 +1,279 @@
+﻿<ion-view title="Home">
+  <ion-header-bar class="bar-positive qunt-header" align-title="center">
+    <!--<ion-nav-back-button side="left" class="button-icon icon ion-arrow-left-c"></ion-nav-back-button>-->
+    <h1 class="title qunt-sub-header" style="text-align:center">Home</h1>
+  </ion-header-bar>
+
+
+  <ion-content class="qunt-content" scrollbar-y="false">
+
+
+
+    <div class="card" style="margin: 0px 0px;text-align: center;"
+         ng-click="">
+      <div style="margin-top:0;
+               font-weight: bolder;
+               text-align: center;
+               color: #6E4390;
+               font-size: 18px;">
+        Today<span style="padding:0 10px;font-weight:lighter;color:gray;">March 9</span>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="card" style="margin: 2px 0px; height: inherit;"
+         ng-click="">
+      <div class="item "
+           style="height:inherit;
+                     font-family: Roboto-Regular;
+                     color: #B73573;
+                     border-color: white;
+                     border-bottom-width: 0;
+                     font-size: 18px;
+                     font-weight: bolder;">
+        Glucose Levels
+        <div style="font-weight lighter;
+                     color gray;
+                     font-size 12px;">Last synced 1 minute ago</div>
+      </div>
+      <canvas id="GlucoseLevels" width="220" height="150"> </canvas>
+      <div id="labeltech">
+        <ul>
+          <li>
+            <img src="images/BloodGlucose.png" style="float: right;
+                        width: 33px;
+                        margin-top: -10px;
+                        margin-right: 42px;">
+          </li>
+
+          <li style="color: #B73573;
+                     float: right;
+                     font-size: 30px;
+                     margin-top: -27px;">0/2</li>
+          <br>
+          <li style="float: right;
+                     width: 70px;
+                     padding: 0px;
+                     color: black;"><span></span>entries out of range</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="card" style="margin: 0px 0px; height: inherit;text-align: center;"
+         ng-click="">
+      <div class="item "
+           style="height:inherit;
+                     font-family: Roboto-Regular;
+                     color: #B73573;
+                     border-color: white;
+                     border-bottom-width: 0;
+                     font-size: 18px;
+                     font-weight: bolder;padding: 8px;">
+        <img src="images/AdverseEvent@1.5x.png" style="width: 25px;
+    margin-top: -11px;"><i style="color: #E75A15;
+    font-size: 24px;
+    font-weight: bold;
+    padding: inherit;">0</i><span style="
+                                  font-weight inherit;
+                                  color black;">adverse events</span>
+      </div>
+    </div>
+
+    <div class="col-xs-6 border-div">
+      <div class="">
+        <div class="col-xs-12"
+             style="font-weight: bolder;
+                         color :#6E4390;
+                         font-size: 18px;
+                         margin-top: 10px;
+                         margin-left: -15px;">Insulin</div>
+        <img src="images/Insulin@2x.png" ng-click=""
+             style="width: 35px;
+                        text-align: center;
+                        margin-left: -80%;
+                        margin-top: 50px;">
+        <span style="position: absolute;
+    font-weight: bolder;
+    color: #6E4390;
+    font-size: 35px;
+    margin-top: 58px;">
+          10<i style="font-size: 17px;
+                        color: black;padding: 2px;">U</i>
+        </span>
+        <br><br>
+        <div class="col-xs-6 bg-color" style="height: 120px;;
+                         background-color: whitesmoke;">
+          <span style="position :absolute;
+                              font-weight: bolder;
+                              color: #6E4390;
+                              font-size: 18px;
+                              margin-top: 10px;
+                              margin-left: 18px;
+                              width :30px;">
+            0<i style="font-size: 12px;
+                           color: black;padding: 2px;">U</i>
+          </span><br>
+          <div style="position: absolute;
+                           margin-top: 10px;
+                           font: bold;
+                           margin-left: 12px;
+                           color: black;">bolus</div>
+          <span style="position: absolute;
+                           font-weight: bolder;
+                           color: #6E4390;
+                           font-size: 18px;
+                           margin-top: 54px;
+                           margin-left: 10px;">
+            10<i style="font-size: 12px;
+                           color: black;padding: 2px;">U</i>
+          </span><br>
+          <div style="position: absolute;
+                           margin-top: 55px;
+                           font: bold;
+                           margin-left: 12px;
+                           color: black;">short</div>
+        </div>
+        <div class="col-xs-6 bg-color" style="height: 120px;background-color: whitesmoke;">
+          <span style="position: absolute;
+                              font-weight: bolder;
+                              color: #6E4390;
+                              font-size :18px;
+                              margin-top :10px;
+                              margin-left :5px;
+                              font-weight: bolder;">
+            10<i style="font-size: 12px;
+                           color: black;padding: 2px;">U</i>
+          </span><br>
+          <div style="position: absolute;
+                           margin-top: 10px;
+                           font: bold;
+                           margin-left: 2px;
+                           color: black;">basal</div>
+          <span style="position: absolute;
+                           display: block;
+                           font-weight: bolder;
+                           color: #6E4390;
+                           font-size: 18px;
+                           margin-top: 55px;
+                           margin-left: 15px;">
+            0<i style="font-size: 12px;
+                           color: black;padding: 2px;">U</i>
+          </span><br>
+          <div style="margin-top: 57px;
+                           color: black;
+                           width: 81px;
+                           margin-left: -13px;
+                           font-size: 12px;">intermediate</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 " style="color: green;
+            font-size: 18px;
+            height: inherit;
+            font-weight: bolder;
+            font-size: 18px;
+            margin-top: 10px;">Food</div>
+    <div>
+      <img src="images/MealLarge.png" ng-click=""
+           style="width: 30px;
+               position: absolute;
+               margin-top: 51px;
+               margin-left: -140px;"> <span style="position: absolute;
+               font-weight: bolder;
+               color: darkgreen;
+               font-size: 27px;
+               margin-top: 55px;
+               margin-left: -100px;
+               float: left;">45<i style="color:black;font-size: 20px;">g</i></span><br>
+      <i style="margin-left: -145px;
+               position: absolute;
+               font-size: 16px;
+               color: black;
+               margin-top: 64px;">carbs per meal</i>
+      <img src="images/Apple@1.5x.png" ng-click=""
+           style="width: 30px;
+                 position: absolute;
+                 margin-top: 120px;
+                 margin-left: -140px;"> <span style="position: absolute;
+               font-weight: bolder;
+               color: darkgreen;
+               font-size: 27px;
+               margin-top: 125px;
+               margin-left: -100px;">15<i style="color:black;font-size: 20px;">g</i></span>
+      <i style="margin-left: -145px;
+               position: absolute;
+               font-size: 16px;
+               color: black;
+               margin-top: 155px;">carbs per snack</i>
+    </div>
+    <script id="templates/popover.html" type="text/ng-template">
+      <ion-popover-view style="    top: 270.219px;">
+        <ion-content>
+          <ion-list>
+            <ion-item ng-click="redirctglucose()">
+              <img src="images/BloodGlucose.png" style="width:35px" />
+              <div style="color: rebeccapurple;height: inherit;font-weight: bolder;font-size: 18px;margin-top:-30px;margin-left:55px">Glucose</div>
+            </ion-item>
+            <ion-item ng-click="redirctInsulinEntry()">
+              <img src="images/Insulin@2x.png" style="width:35px" />
+              <div style="font-weight: bolder;color :#6E4390;font-size: 18px;margin-top:-32px;margin-left:55px">Insulin</div>
+            </ion-item>
+            <ion-item ng-click="redirctConnectDevices()">
+              <img src="images/MealLarge.png" style="width:35px" />
+              <div style="color: green;font-size: 16px;height: inherit;font-weight: bolder;font-size: 18px;margin-top:-35px;margin-left:55px">Food</div>
+            </ion-item>
+            <ion-item ng-click="adverseevent()">
+              <img src="images/AdverseEvent@1.5x.png" style="width:35px" />
+              <div style="color: orangered;
+    height: inherit;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: -35px;
+    margin-left: 55px">Adverse Event</div>
+            </ion-item>
+        </ion-content>
+      </ion-popover-view>
+    </script>
+
+  </ion-content>
+
+  <div class="tabs tabs-icon-top" style="border-top: solid #6E4390 !important;position:fixed;
+                  border-top-color: #6E4390 !important;">
+    <a class="tab-item">
+      <i class="icon ion-home"></i>
+      Home
+    </a>
+    <a class="tab-item" ng-click="redirctDiaryEntry()"style="margin-left: -4px;">
+      <i class="icon ion-ios-bookmarks"></i>
+      Diary
+    </a>
+
+    <img src="images/floating_btn.svg" ng-click="floatingmenu($event)" style="position: absolute;
+                     bottom: 1px;
+                     overflow: visible;
+                     width: 55px;" />
+
+    <a class="tab-item" style=" margin-left:86px;">
+      <i class="icon ion-stats-bars"></i>
+      Graphs
+    </a>
+    <a class="tab-item" ng-click="redirctDevices()">
+      <i class="icon ion-more"></i>
+      More
+    </a>
+  </div>
+  <style>
+
+    body {
+      cursor: url('http://ionicframework.com/img/finger.png'), auto;
+    }
+  </style>
+
+
+</ion-view>
+
+

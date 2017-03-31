@@ -1,0 +1,44 @@
+﻿[
+  {
+    "date": "Fri Mar 31 2017",
+    "details": [
+      {
+        "Time": "12.30pm",
+        "Glucose": "2mg/dL"
+      },
+      {
+        "Time": "11.00am",
+        "Glucose": "3mg/dL"
+      }
+    ]
+  },
+    {
+    "date": "Wed March 29 2017",
+    "details": [
+      {
+        "Time": "7.45pm",
+          "Glucose": "1mg/dL"
+      },
+      {
+        "Time": "5.30pm",
+        "Glucose": "2mg/dL"
+      },
+       {
+          "Time": "4.40pm",
+          "Glucose": "3mg/dL"
+        },
+      {
+        "Time": "2.00pm",
+        "Glucose": "3mg/dL"
+      },
+      {
+          "Time": "12.55pm",
+          "Glucose": "4mg/dL"
+        },
+        {
+          "Time": "12.15pm",
+          "Glucose": "5mg/dL"
+        }
+    ]
+  }
+]

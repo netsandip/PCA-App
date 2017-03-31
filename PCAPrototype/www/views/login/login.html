@@ -1,0 +1,67 @@
+﻿<ion-view title="Login">
+     <ion-header-bar class="bar-positive qunt-header" align-title="center">
+        <!--<ion-nav-back-button side="left" class="button-icon icon ion-arrow-left-c"></ion-nav-back-button>-->
+        <h1 class="title qunt-sub-header" style="text-align:center">Login</h1>
+       </ion-header-bar>
+     <ion-content  style="margin:32px 0px;" scrollbar-y="false">
+        <div class="row">
+            <div class="col col-90" style="padding-left:28px;">
+                <h2 class="title" style="font-size: 16px;text-align:center;">
+                    Please enter your email and  a password to Login into your account
+                </h2>
+            </div>
+        </div>
+        <form name="authorizationForm" ng-controller="loginCtrl" novalidate ng-submit="login(authorizationForm)">
+            <div class="list" style="border-bottom: 1px solid #ddd">
+                <label class="item item-input" style="padding: 4px 20px;border-bottom:none;">
+                    <span class="input-label" style="font-weight:bold;">Email</span>
+                    <input type="email" name="email" id="email" class="form-control" ng-model="auth.email" required style="border: 1px solid #abadb3;padding: 4px;height:24px !important;" />
+                </label>
+                <div class="error-container" ng-show="authorizationForm.$submitted || authorizationForm.email.$touched">
+                    <div class="error">
+                        <p ng-show="authorizationForm.email.$error.required">
+                            <i class="ion-information-circled"></i>
+                            Email Address is required
+                        </p> 
+                        <p ng-show="authorizationForm.email.$error.email">
+                            <i class="ion-information-circled"></i>
+                            Invalid email address
+                        </p>                      
+                    </div>
+                </div>
+               
+                <label class="item item-input" style="padding: 4px 20px;border-bottom:none;">
+                    <span class="input-label" style="font-weight:bold;">Password</span>
+                    <input type="password" name="password" ng-maxlength="8" ng-model="auth.pwd" required value="" style="border: 1px solid #abadb3;padding: 4px;height:24px !important;" />
+                </label>
+                <div class="error-container" ng-show="authorizationForm.$submitted || authorizationForm.password.$touched">
+                    <div class="error">
+                        <p ng-show="authorizationForm.password.$error.required">
+                            <i class="ion-information-circled"></i>
+                            Password is required
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="error-container" ng-show="login_invalidresponse_msg">
+                <div class="error">
+                    <p>{{login_invalidresponse_msg}}</p>
+                </div>
+            </div>
+            <div class="error-container" ng-show="login_invalid_msg">
+                <div class="error">
+                    <p>{{login_invalid_msg}}</p>
+                </div>
+            </div>
+            <div class="bar bar-footer" style="background-image: none;bottom: inherit;">
+                <div class="form-actions col col-100" align="right">
+                    <button type="submit" ng-disabled="" class="btn btn-login" style="color:#6E4390;font-weight: bold;text-decoration:none;">Login</button>
+                </div>
+            </div>
+        </form>
+
+      <button class="button" ng-click="insert()">insert</button>
+      <button class="button" ng-click="select()">select</button>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+﻿{
+      "Glucose": [
+        {
+          "GlucoseEntry": "After Glucose Entry",
+          "Time": "4 hours"
+        }
+      ],
+      "Insulin": [
+        {
+          "InsulinEntry": "Specific Time",
+          "Time": "4 hours"
+        },
+        {
+          "InsulinEntry": "Specific Time",
+          "Time": "4 hours"
+        },
+        {
+          "InsulinEntry": "Specific Time",
+          "Time": "4 hours"
+        },
+        {
+          "InsulinEntry": "Specific Time",
+          "Time": "4 hours"
+        }
+      ],
+  "Food": [
+    {
+      "FoodEntry": "After Glucose Entry",
+      "Time": "60 mins"
+    },
+    {
+      "FoodEntry": "After Food Entry",
+      "Time": "60 mins"
+    }
+  ],
+   "AdverseEvent": [
+        {
+          "EventEntry": "Specific Time",
+          "Time": "7:00am"
+        }
+      ],
+      "Visit": [
+        {
+          "VisitEntry": "Before Visit",
+          "Time": "2 days"
+        }
+      ]   
+} 

@@ -1,0 +1,78 @@
+﻿<ion-view title="Insulin">
+
+    <ion-header-bar class="bar-positive qunt-header item-icon-right" align-title="center" style="background-color: #743C97;border-bottom: #7fa046;">
+        <i class="button  button-clear  ion-chevron-left" ng-click="redirctback()" style="margin-top:-2px"></i>
+        <h1 class="title qunt-sub-header" style="text-align:center">Insulin</h1>
+        <i class="icon ion-android-checkbox-outline" ng-click="redirctitem()" style="margin-top:-2px" ></i>
+    </ion-header-bar>
+
+    <ion-content >
+        
+           
+            <div class="list">
+                <div ng-repeat="items in insulinDetails">
+                    <div class="item item-divider insulinheader">
+                        <b><span ng-if="now!=items.date">{{items.date}}</span>
+                            <span ng-if="now==items.date">Today</span></b>
+                       
+                        
+                        
+                    </div>
+                        
+                    <ion-item ng-repeat="item in items.details">
+                        <b><span class="insulintime"> {{item.Time}}</span></b>
+                        <b> <span class="insulinunits">{{item.Units}}</span></b>
+                        <b> <span class="insulintype">{{item.Type}}</span></b>
+                        <b> <span class="insulinevent">{{item.Event}}</span></b>
+                    </ion-item>
+                        
+                    
+               
+                
+            </div>
+               
+
+           
+                
+               
+            
+
+                
+            
+                    </div>
+       
+
+
+    </ion-content>
+
+    <div class="tabs tabs-icon-top" style="border-top: solid #6E4390 !important;position:fixed;
+                  border-top-color: #6E4390 !important;">
+        <a class="tab-item">
+            <i class="icon ion-home"></i>
+            Home
+        </a>
+        <a class="tab-item" ng-click="redirctDiaryEntry()" style="margin-left: -4px;">
+            <i class="icon ion-ios-bookmarks"></i>
+            Diary
+        </a>
+
+        <img src="images/floating_btn.svg" ng-click="floatingmenu($event)" style="position: absolute;
+                     bottom: 1px;
+                     overflow: visible;
+                     width: 55px;" />
+
+        <a class="tab-item" style=" margin-left:86px;">
+            <i class="icon ion-stats-bars"></i>
+            Graphs
+        </a>
+        <a class="tab-item" ng-click="redirctDevices()">
+            <i class="icon ion-more"></i>
+            More
+        </a>
+    </div>
+    <style>
+        body {
+            cursor: url('http://ionicframework.com/img/finger.png'), auto;
+        }
+    </style>
+</ion-view>

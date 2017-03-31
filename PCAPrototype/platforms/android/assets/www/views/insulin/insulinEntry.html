@@ -1,0 +1,60 @@
+﻿
+<ion-view title="Insulin Entry">
+    <ion-header-bar class="bar-positive qunt-header" align-title="center">
+        <i class="button  button-clear  ion-close qunt-sub-header" ng-click="close()"></i>
+        <!--<ion-nav-back-button side="left" class="button-icon icon ion-arrow-left-c"></ion-nav-back-button>-->
+        <h1 class="title qunt-sub-header" style="text-align:center">Insulin Entry</h1>
+        <button class="button button-clear qunt-sub-header" ng-click="saveInsulinEntry();"><b>Save</b></button>
+    </ion-header-bar>
+    <!--<ion-nav-buttons side="primary">
+
+    </ion-nav-buttons>-->
+    <ion-content class="insulin-content" style="top:40px">
+        <ion-list style="height:20px">
+            <onezone-datepicker datepicker-object="onezoneDatepicker">
+                <ion-item class="item-icon-right show-onezone-datepicker" ng-click="">
+                    <b class="show-onezone-datepicker">Date</b>
+                    <span class="rightInsulin show-onezone-datepicker">
+                        {{onezoneDatepicker.date | date:'dd MMMM yyyy'}}
+                    </span>
+                    <i class="icon ion-ios-arrow-right show-onezone-datepicker"></i>
+
+                </ion-item>
+            </onezone-datepicker>
+
+            <ion-item nav-clear menu-close ng-click="time()" class="item-icon-right">
+                <b>Time</b>
+                <span class="rightInsulin">
+                  {{m}}
+                </span>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+           <ion-item nav-clear menu-close class="item-icon-right">
+               <b>Type</b>
+               <span class="rightInsulin"  ng-click="TypeActionSheet()">
+                  {{selectedType}} {{type}}
+                   <i class="icon ion-ios-arrow-right"></i>
+               </span>
+               
+           </ion-item>
+
+            <ion-item nav-clear menu-close ng-click="" class="item item-input-inset">
+                <b>Units</b>
+                <label class="item item-input" style="width:80px;height:30px;margin-left:90px">
+                    <input type="text" min="0" id="units" ng-model="units.value">
+                </label>
+                <b style="margin-left:10px">U</b>
+            </ion-item>
+            <ion-item nav-clear menu-close class="item-icon-right">
+                <b>Event</b>
+                <span class="rightInsulin" ng-click="EventActionSheet()">
+               {{selectedEvent}}   {{event}} 
+                    <i class="icon ion-ios-arrow-right"></i>
+                </span>
+
+            </ion-item>
+
+
+        </ion-list>
+    </ion-content>
+</ion-view>

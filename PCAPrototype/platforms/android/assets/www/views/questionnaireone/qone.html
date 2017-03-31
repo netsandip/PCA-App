@@ -1,0 +1,73 @@
+﻿<ion-view title="Questionnare">
+
+    <ion-header-bar class="bar-positive qunt-header item-icon-right" align-title="center" style="background-color: #743C97;border-bottom: #7fa046;">
+        <i class="button  button-clear  ion-close qunt-sub-header" ng-click="redirctback()" style="margin-top:-2px"></i>
+        <h1 class="title qunt-sub-header" style="text-align:center">Questionnare </h1>
+
+    </ion-header-bar>
+
+    <ion-content>
+
+        <ion-item>
+            <b>1.How are you feeling today?</b>
+        </ion-item>
+
+
+        <ul class="list">
+            <li class="item item-checkbox checkbox-royal " style="border-top: none">
+                <div style="margin-left:-5px;font-size:medium"><b>Excellent</b></div>
+                <label class="checkbox">
+                    <input type="radio" ng-model="one" value="one" name="same">
+                </label>
+            </li>
+
+            <li class="item item-checkbox checkbox-royal " style="border-top: none">
+                <div style="margin-left:-5px;font-size:medium;margin-top:-10px"><b>Very Good</b></div>
+                <label class="checkbox " style="margin-top:-28px">
+                    <input type="radio" ng-model="two" value="two" name="same">
+                </label>
+            </li>
+
+            <li class="item item-checkbox checkbox-royal " style="border-top: none">
+                <div style="margin-left:-5px;font-size:medium;margin-top:-10px"><b>Good</b></div>
+                <label class="checkbox " style="margin-top:-28px">
+                    <input type="radio"
+                           ng-model="three" value="three" name="same">
+                </label>
+            </li>
+
+            <li class="item item-checkbox checkbox-royal " style="border-top: none">
+                <div style="margin-left:-5px;font-size:medium;margin-top:-10px"><b>Fair</b></div>
+                <label class="checkbox " style="margin-top:-28px">
+                    <input type="radio"
+                           ng-model="four" value="four" name="same">
+                </label>
+            </li>
+            <li class="item item-checkbox checkbox-royal " style="border-top: none;border-bottom:none">
+                <div style="margin-left:-5px;font-size:medium;margin-top:-10px"><b>Poor</b></div>
+                <label class="checkbox " style="margin-top:-28px">
+                    <input type="radio"
+                           ng-model="five" value="five" name="same">
+                </label>
+            </li>
+
+
+
+
+        </ul>
+
+
+
+
+
+
+        <hr style="margin-top:180px;border-color:#743C97;" />
+        <div class="list row" style="margin-top:-11px">
+            <div style="margin-left:140px">1 of 3</div>
+            <a ng-click="redirctqtwo()" align="right" class="col col-100" style="color:#6E4390;font-weight: bold;text-decoration:none;">Next</a>
+        </div>
+
+    </ion-content>
+
+
+</ion-view>

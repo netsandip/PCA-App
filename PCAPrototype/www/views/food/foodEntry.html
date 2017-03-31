@@ -1,0 +1,91 @@
+﻿<ion-view title="Food Entry">
+    <form name="authorizationForm" ng-controller="foodEntryCtrl" novalidate ng-submit="save(authorizationForm)">
+        <ion-header-bar class="bar-positive qunt-header" align-title="center" style="background-color: #7fa046;border-bottom: #7fa046;">
+            <i class="button  button-clear  ion-close qunt-sub-header" ng-click="closes()"></i>
+            <h1 class="title qunt-sub-header" style="text-align:center">Food Entry</h1>
+            <button class="button button-clear qunt-sub-header" type="submit"><b>Save</b></button>
+        </ion-header-bar>
+
+        <ion-content style="top:40px">
+
+
+            <ion-list>
+
+
+                <onezone-datepicker datepicker-object="onezoneDatepicker">
+                    <ion-item class="item-icon-right show-onezone-datepicker" ng-click="">
+                        <b class="show-onezone-datepicker">Date</b>
+                        <span class="right show-onezone-datepicker">
+                            {{onezoneDatepicker.date | date:' MMMM dd yyyy'}}
+                        </span>
+                        <i class="icon ion-ios-arrow-right show-onezone-datepicker"></i>
+
+                    </ion-item>
+                </onezone-datepicker>
+
+
+                <ion-item nav-clear menu-close ng-click="time()" class="item-icon-right">
+                    <b>Time</b>
+
+                    <span class="right">
+
+
+                        {{t}}
+                    </span>
+
+
+
+
+                    <i class="icon ion-ios-arrow-right"></i>
+                </ion-item>
+
+                <ion-item nav-clear menu-close ng-click="show()" class="item-icon-right">
+                    <b>Type</b>  <span class="right">{{select}}{{user}}</span>
+                    <i class="icon ion-ios-arrow-right"></i>
+                </ion-item>
+
+
+                <ion-item nav-clear menu-close ng-click="" class="item item-input-inset">
+                    <b>Carbs</b>
+                    <label class="item item-input box">
+                        <input ng-model="formData.carbs" type="text" id="carbs" name="carbs" required>
+
+                    </label>
+                    <b style="margin-left:30px">g</b>
+                </ion-item>
+
+
+
+
+                <div class="error-container" ng-show="authorizationForm.$submitted || authorizationForm.carbs.$touched">
+                    <div class="error">
+                        <p ng-show="authorizationForm.carbs.$error.required">
+                            <i class="ion-information-circled"></i>
+                            Carbs is required
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="error-container" ng-show="login_invalid_msg">
+                    <div class="error">
+                        <i class="ion-information-circled" style="margin-left:-30px"></i>
+                        <div style="margin-left:200px;margin-top:-20px">{{login_invalid_msg}}</div>
+                    </div>
+                </div>
+            
+             </ion-list>
+           
+
+
+
+
+
+
+
+
+
+        </ion-content>
+
+</form>
+</ion-view>

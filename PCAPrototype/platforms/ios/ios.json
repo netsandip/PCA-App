@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"CDVKeyboard\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.quintiles.pcaPrototype"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "com.quintiles.pcaPrototype"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+            "id": "cordova-plugin-keyboard.keyboard",
+            "pluginId": "cordova-plugin-keyboard",
+            "clobbers": [
+                "window.Keyboard"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-plugin-keyboard": "1.1.5"
+    }
+}
